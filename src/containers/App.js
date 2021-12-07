@@ -5,6 +5,7 @@ import DataPad from './DataPad'
 import Camera from './Camera'
 import Message from './Message'
 import ActionPad from './ActionPad'
+import Footer from '../components/Footer'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       </div>
       <Message />
       <ActionPad />
-
+      <Footer />
     </div>
   )
 }
