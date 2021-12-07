@@ -1,9 +1,10 @@
 import '../styles/App.css'
+import CompSysTitle from '../components/CompSysTitle'
 
 function App() {
   return (
     <div className='global-container'>
-      app
+      <CompSysTitle />
     </div>
   )
 }
