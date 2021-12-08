@@ -11,29 +11,33 @@ function CompSysTitle() {
 
         function quicklySwitchClass() {
             const element = document.getElementById('comp-sys-title')
-            for (let i = 1; i < randomInterval(2, 8); i++) {
-                setTimeout(() => {
+            let inter = randomInterval(2, 8)
+            let counter = randomInterval(2, 8)
+            let hello = setInterval(() => {
+                if (counter > 0) {
                     if (element.className === 'solid') {
                         element.className = 'flicker'
+                        counter -= 1
                     } else {
                         element.className = 'solid'
+                        counter -= 1
                     }
-                }, 100);
-            }
-            element.className = 'solid'
-            console.log(element.className)
-
+                } else {
+                    clearInterval(hello)
+                    element.className = 'solid'
+                }
+            }, 50);
         }
 
         setInterval(() => {
             quicklySwitchClass()
-        }, randomInterval(1000, 20000));
+        }, randomInterval(1000, 30000));
     }
 
     return (
         <div className='comp-sys-title-container'>
+            {flicker()}
             <div className='solid' id='comp-sys-title'>
-                {flicker()}
                 BUNKER COMPUTER SYSTEMS V2.1.2
             </div>
         </div>
@@ -41,5 +45,3 @@ function CompSysTitle() {
 }
 
 export default CompSysTitle
-
-// BUNKER COMPUTER SYSTEMS V2.1.2
