@@ -1,5 +1,15 @@
-.comp-sys-title {
+.comp-sys-title-container {
     background-color: rgb(45, 45, 39);
     border: 6px inset #656565;
     border-radius: 0px;
+}
+
+.solid {
+    color: rgb(0, 255, 30);
+    text-shadow: none;
+}
+
+.flicker {
+    color: transparent;
+    text-shadow: 0 0 8px #000;
 }
