@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/CompSysTitle.css'
-import { Flicker } from '../constants/Flicker'
+import { Flicker } from './helpers/Flicker'
 
 function CompSysTitle() {
     

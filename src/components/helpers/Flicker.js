@@ -6,9 +6,8 @@ export const Flicker = function flicker() { // this will flicker the title
 
     function quicklySwitchClass() {
         const element = document.getElementById('comp-sys-title')
-        let inter = randomInterval(2, 8)
         let counter = randomInterval(2, 8)
-        let hello = setInterval(() => {
+        let switcharoo = setInterval(() => {
             if (counter > 0) {
                 if (element.className === 'solid') {
                     element.className = 'flicker'
@@ -18,7 +17,7 @@ export const Flicker = function flicker() { // this will flicker the title
                     counter -= 1
                 }
             } else {
-                clearInterval(hello)
+                clearInterval(switcharoo)
                 element.className = 'solid'
             }
         }, 50);

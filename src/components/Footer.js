@@ -4,7 +4,7 @@ import '../styles/Footer.css'
 function Footer() {
     return (
         <div className='footer-container'>
-            Footer
+            Copyright © 2021 Dario Carlino
         </div>
     )
 }
