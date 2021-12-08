@@ -1,3 +1,5 @@
 .action-pad-container {
     background-color: rgb(25, 36, 25);
+    border: 6px inset #656565;
+    border-radius: 0px;
 }

@@ -7,7 +7,9 @@
     height: 1000px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.2fr 2fr 0.1fr 3fr;
+    grid-template-rows: 0.1fr 0.3fr 1fr 0.3fr 2fr; /* title, warning, datapad, message, actionpad */
+    border: 20px outset #5f745f;
+    border-radius: 20px;
 }
 
 .data-pad-camera-container {
