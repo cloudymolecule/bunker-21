@@ -12,7 +12,7 @@ function App() {
     <div className='global-container'>
       <CompSysTitle />
       <Warning />
-      <div>
+      <div className='data-pad-camera-container'>
         <DataPad />
         <Camera />
       </div>

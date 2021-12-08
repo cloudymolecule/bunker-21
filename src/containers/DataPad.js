@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/DataPad.css'
 import BotStat from '../components/data-pad/BotStat'
 import Date from '../components/data-pad/Date'
 import Hunger from '../components/data-pad/Hunger'
@@ -11,7 +12,7 @@ import Weather from '../components/data-pad/Weather'
 
 function DataPad() {
     return (
-        <div>
+        <div className='data-pad-container'>
             <Date />
             <Time />
             <Weather />
