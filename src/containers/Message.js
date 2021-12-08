@@ -1,8 +1,9 @@
 import React from 'react'
+import '../styles/Message.css'
 
 function Message() {
     return (
-        <div>
+        <div className='message-container'>
             Message
         </div>
     )
