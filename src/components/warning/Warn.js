@@ -3,8 +3,9 @@ import { Flicker } from '../../helpers/Flicker'
 
 function Warn() {
     return (
-        <div>
-            this is a warning
+        <div className='warn-container' id='warn-container'>
+            {Flicker('warn-container')}
+            This is a warning
         </div>
     )
 }

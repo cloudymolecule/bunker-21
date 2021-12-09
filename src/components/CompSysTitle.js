@@ -5,11 +5,9 @@ import { Flicker } from '../helpers/Flicker'
 function CompSysTitle() {
     
     return (
-        <div className='comp-sys-title-container'>
-            {Flicker('comp-sys-title')}
-            <div className='solid' id='comp-sys-title'>
-                BUNKER COMPUTER SYSTEMS V2.1.2
-            </div>
+        <div className='comp-sys-title-container' id='comp-sys-title-container'>
+            {Flicker('comp-sys-title-container')}
+            BUNKER COMPUTER SYSTEMS V2.1.2
         </div>
     )
 }

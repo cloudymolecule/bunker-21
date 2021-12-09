@@ -9,10 +9,12 @@ import Thirst from '../components/data-pad/Thirst'
 import Time from '../components/data-pad/Time'
 import TimeElapsed from '../components/data-pad/TimeElapsed'
 import Weather from '../components/data-pad/Weather'
+import { Flicker } from '../helpers/Flicker'
 
 function DataPad() {
     return (
-        <div className='data-pad-container'>
+        <div className='data-pad-container' id='data-pad-container'>
+            {Flicker('data-pad-container')}
             <Date />
             <Time />
             <Weather />
