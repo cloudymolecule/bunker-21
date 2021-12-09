@@ -1,11 +1,11 @@
-export const Flicker = function flicker() { // this will flicker the title
+export const Flicker = function flicker(id) { // this will flicker the title
         
     function randomInterval(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min)
     }
 
     function quicklySwitchClass() {
-        const element = document.getElementById('comp-sys-title')
+        const element = document.getElementById(id)
         let counter = randomInterval(2, 8)
         let switcharoo = setInterval(() => {
             if (counter > 0) {
