@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'computer';
+    src: local('computer'),
+    url('../assets/fonts/COMPUTERRobot.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gameplay';
+    src: local('gameplay'),
+    url('../assets/fonts/Gameplay.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'smash';
+    src: local('smash'),
+    url('../assets/fonts/SuperSmashTV.ttf') format('truetype')
+}
