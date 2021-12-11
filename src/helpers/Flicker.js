@@ -1,4 +1,4 @@
-export const Flicker = function flicker(id) { // this will flicker the title
+export const Flicker = function flicker(id) { // this will flicker things
         
     function randomInterval(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min)
@@ -28,5 +28,6 @@ export const Flicker = function flicker(id) { // this will flicker the title
 
     setInterval(() => {
         quicklySwitchClass()
-    }, randomInterval(1000, 3000));
+    }, randomInterval(7000, 50000));
 }
+

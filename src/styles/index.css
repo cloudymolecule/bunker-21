@@ -1,5 +1,20 @@
+/* @font-face {
+  font-family: 'game_over';
+  src: local('game_over'),
+       url('../assets/fonts/game_over.ttf') format('truetype');
+} */
+
+/* @font-face {
+  font-family: 'game_over';
+  src: url('game_over.ttf');
+  src: local('☺︎'),
+    url('../assets/fonts/game_over.ttf') format("truetype")
+    
+} */
+
 body {
   margin: 0;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,9 +22,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: rgb(0, 255, 30);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
