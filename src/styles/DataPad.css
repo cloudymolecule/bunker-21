@@ -1,5 +1,8 @@
 .data-pad-container {
+    padding: 15px;
+    font-size: small;
     background-color: rgb(2, 10, 1);
-    /* border: 6px inset #656565;
-    border-radius: 0px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
 }

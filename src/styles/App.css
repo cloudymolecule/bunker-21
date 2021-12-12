@@ -7,10 +7,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.3fr 1fr 0.3fr 2fr; /* title, warning, datapad, message, actionpad */
-    /* border: 15px solid rgb(45, 45, 45);
-    border-radius: 20px; */
-    border: 15px groove rgb(140, 140, 140);
-    border-radius: 28px;
+    border: 15px outset rgb(140, 140, 140);
+    border-radius: 16px;
     gap: 5px;
 }
 

@@ -14,16 +14,19 @@ import { Flicker } from '../helpers/Flicker'
 function DataPad() {
     return (
         <div className='data-pad-container' id='data-pad-container'>
+            
             {Flicker('data-pad-container')}
-            <Date />
-            <Time />
-            <Weather />
-            <TimeElapsed />
-            <PowRem />
-            <Hunger />
-            <Thirst />
-            <Sleep />
-            <BotStat />
+            
+            <div>DATE: <Date /></div>
+            <div>TIME: <Time /></div>
+            <div>WEATHER: <Weather /></div>
+            <div>TIME ELAPSED: <TimeElapsed /></div>
+            <div>POWER REMAINING: <PowRem /></div>
+            <div>HUNGER: <Hunger /></div>
+            <div>THIRST: <Thirst /></div>
+            <div>SLEEP: <Sleep /></div>
+            <div>BOTSTAT: <BotStat /></div>
+            
         </div>
     )
 }
