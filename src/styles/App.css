@@ -1,6 +1,6 @@
 .global-container {
     text-align: center;
-    background-color: rgb(0, 255, 30);
+    background-color: rgb(123, 123, 123);
     position: relative;
     margin: 20px 20% 20px 20%;
     height: 1000px;

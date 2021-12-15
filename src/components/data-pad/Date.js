@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Date() {
-    return (
-        <div>
-            date
-        </div>
-    )
+class Date extends Component {
+
+    state = {
+        year: '',
+        month: '',
+        day: '',
+        hour: '',
+        minutes: '',
+        secons: ''
+    }
+    render() {
+        return (
+            <div>
+                hiiii
+            </div>
+        )
+    }
 }
 
 export default Date
