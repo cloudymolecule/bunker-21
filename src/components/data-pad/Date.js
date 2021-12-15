@@ -3,17 +3,16 @@ import React, { Component } from 'react'
 class Date extends Component {
 
     state = {
-        year: '',
-        month: '',
-        day: '',
-        hour: '',
-        minutes: '',
-        secons: ''
+        year: 2021,
+        month: 1,
+        day: 10
     }
+
     render() {
+
         return (
             <div>
-                hiiii
+                date
             </div>
         )
     }
