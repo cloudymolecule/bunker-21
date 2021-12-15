@@ -35,9 +35,14 @@ class Time extends Component {
         }, 1000);
     }
 
+    processTime = function(){
+        return console.log(this.state)
+    }
+
     render() {
         return (
             <div>
+                {/* {this.hi()} */}
                 {/* {this.state.hours}:{this.state.minutes}:{this.state.seconds} */}
             </div>
         )
