@@ -36,14 +36,29 @@ class Time extends Component {
     }
 
     processTime = function(){
-        return console.log(this.state)
+        let h = this.state.hours.toString()
+        let m = this.state.minutes.toString()
+        let s = this.state.seconds.toString()
+        
+        if (h.length === 1) {
+            h = '0' + h
+        }
+
+        if (m.length === 1) {
+            m = '0' + m
+        }
+
+        if (s.length === 1) {
+            s = '0' + s
+        }
+        
+        return `${h}:${m}:${s}`
     }
 
     render() {
         return (
             <div>
-                {/* {this.hi()} */}
-                {/* {this.state.hours}:{this.state.minutes}:{this.state.seconds} */}
+                {this.processTime()}
             </div>
         )
     }
