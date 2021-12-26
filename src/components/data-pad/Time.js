@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { addTime } from '../../actions/time'
 
 class Time extends Component {
     
@@ -18,6 +20,9 @@ class Time extends Component {
                 
             }
             if (this.state.minutes === 59) {
+
+                this.props.addTime(this.state.hours)
+
                 this.setState({
                     minutes: 0,
                     hours: this.state.hours + 1
@@ -32,7 +37,7 @@ class Time extends Component {
             this.setState({
                 seconds: this.state.seconds + 1
             })
-        }, 10);
+        }, 0.1);
     }
 
     processTime = function(){
@@ -51,6 +56,8 @@ class Time extends Component {
         if (s.length === 1) {
             s = '0' + s
         }
+
+        
         
         return `${h}:${m}:${s}`
     }
@@ -64,4 +71,8 @@ class Time extends Component {
     }
 }
 
-export default Time
+const mapStateToProps = state => ({ 
+    errors: state.time.errors
+})
+
+export default connect(mapStateToProps, { addTime })(Time)

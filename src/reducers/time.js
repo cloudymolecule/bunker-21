@@ -4,7 +4,7 @@ const time = (state = { time: [], errors: []}, action) => {
         case 'ADD_TIME':
             return {
                 ...state,
-                time: [...state.time],
+                time: [state.time],
                 errors: []
             }
 
