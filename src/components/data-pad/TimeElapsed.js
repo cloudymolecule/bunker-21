@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function TimeElapsed() {
-    return (
-        <div>
-            timeelapsed
-        </div>
-    )
+class TimeElapsed extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default TimeElapsed
