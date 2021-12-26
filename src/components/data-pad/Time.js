@@ -32,7 +32,7 @@ class Time extends Component {
             this.setState({
                 seconds: this.state.seconds + 1
             })
-        }, 1000);
+        }, 10);
     }
 
     processTime = function(){
