@@ -12,7 +12,7 @@ class Date extends Component {
 
         return (
             <div>
-                date
+                {this.state.year}
             </div>
         )
     }
