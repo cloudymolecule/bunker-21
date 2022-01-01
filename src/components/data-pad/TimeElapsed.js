@@ -8,8 +8,9 @@ class TimeElapsed extends Component {
     render() {
         return (
             <div>
-                {console.log(Calendar(this.props.timeEl))}
-                {/* {Calendar(this.props.timeEl)} */}
+                DAYS: {Calendar(this.props.timeEl, 'd')}
+                MONTHS: {Calendar(this.props.timeEl, 'm')}
+                YEARS: {Calendar(this.props.timeEl, 'y')}
             </div>
         )
     }
