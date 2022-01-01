@@ -11,33 +11,60 @@ class Time extends Component {
     }
 
     componentDidMount() {
-        setInterval(() => {
-            if (this.state.seconds === 59) {
+        // setInterval(() => {
+        //     if (this.state.seconds === 59) {
+        //         this.setState({
+        //             seconds: 0,
+        //             minutes: this.state.minutes + 1
+        //         })
+                
+        //     }
+        //     if (this.state.minutes === 59) {
+
+        //         this.props.addTime(this.state.hours)
+
+        //         this.setState({
+        //             minutes: 0,
+        //             hours: this.state.hours + 1
+        //         })
+        //     }
+        //     if (this.state.hours === 23) {
+        //         this.setState({
+        //             hours: 0,
+        //         })
+        //     }
+
+        //     this.setState({
+        //         seconds: this.state.seconds + 1
+        //     })
+        // }, 1);
+        setInterval(() => { // fast test interval
+            if (this.state.seconds === 40) {
                 this.setState({
                     seconds: 0,
-                    minutes: this.state.minutes + 1
+                    minutes: this.state.minutes + 20
                 })
                 
             }
-            if (this.state.minutes === 59) {
+            if (this.state.minutes === 40) {
 
                 this.props.addTime(this.state.hours)
 
                 this.setState({
                     minutes: 0,
-                    hours: this.state.hours + 1
+                    hours: this.state.hours + 20
                 })
             }
-            if (this.state.hours === 23) {
+            if (this.state.hours === 40) {
                 this.setState({
                     hours: 0,
                 })
             }
 
             this.setState({
-                seconds: this.state.seconds + 1
+                seconds: this.state.seconds + 20
             })
-        }, 0.1);
+        }, 1);
     }
 
     processTime = function(){

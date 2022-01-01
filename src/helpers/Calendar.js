@@ -3,19 +3,30 @@ export const Calendar = function calendar(hours, type) {
     if (type === 'h') {
         return hours
     } else if (type  === 'd') {
-        return Math.floor(hours / 24)
+        const allDays = (hours / 24)
+        let days = 0
+        for (let i = 0; i < allDays; i++) {
+            if (days === 29) {
+                days = 0
+            } else {
+                days ++
+            }
+        }
+        return days
     } else if (type  === 'm') {
-        return Math.floor(hours / 24 / 30)
+        const allMonths = Math.floor((hours / 24) / 30)
+        let months = 0
+        for (let i = 0; i < allMonths; i++) {
+            if (months === 12) {
+                months = 0
+            } else {
+                months ++
+            }
+        }
+        return months
     } else if (type === 'y') {
-        return Math.floor(hours / 24 / 30 /12) 
+        return Math.floor(((hours / 24) / 30) / 12) 
     } else {
         return 'error'   
     }
-
-    // const hours = time
-    // const days = Math.floor(hours / 24)
-    // const months = Math.floor(days / 30)
-    // const years = Math.floor(months / 12)
-
-    // return {hours, days, months, years}
 }
