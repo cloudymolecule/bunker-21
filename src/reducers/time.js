@@ -1,10 +1,11 @@
 const time = (state = { time: [], errors: []}, action) => {
+    // console.log(action)
     switch (action.type) {
 
         case 'ADD_TIME':
             return {
                 ...state,
-                time: [state.time],
+                time: state.time + 1,
                 errors: []
             }
 
