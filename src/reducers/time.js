@@ -1,4 +1,4 @@
-const time = (state = { time: [], errors: []}, action) => {
+const time = (state = { time: 0, errors: []}, action) => {
     // console.log(action)
     switch (action.type) {
 
