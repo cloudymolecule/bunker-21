@@ -1,9 +1,10 @@
 import React from 'react'
+import { WeatherGen } from '../../helpers/WeatherGen'
 
 function Weather() {
     return (
         <div>
-            weather
+           {console.log(WeatherGen())}
         </div>
     )
 }
