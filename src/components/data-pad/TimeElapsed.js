@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import  { Calendar } from '../../helpers/Calendar'
 
 
 class TimeElapsed extends Component {
+    
     render() {
         return (
             <div>
-                {this.props.timeEl}
+                {console.log(Calendar(this.props.timeEl))}
+                {/* {Calendar(this.props.timeEl)} */}
             </div>
         )
     }
