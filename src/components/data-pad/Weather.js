@@ -4,7 +4,7 @@ import { WeatherGen } from '../../helpers/WeatherGen'
 function Weather() {
     return (
         <div>
-           {console.log(WeatherGen())}
+           {WeatherGen()}
         </div>
     )
 }

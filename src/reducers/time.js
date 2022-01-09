@@ -8,7 +8,6 @@ const time = (state = { time: 0, errors: []}, action) => {
                 errors: []
             }
 
-
         default:
             return state
 
@@ -16,3 +15,5 @@ const time = (state = { time: 0, errors: []}, action) => {
 }
 
 export default time
+
+

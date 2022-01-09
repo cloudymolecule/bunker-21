@@ -19,3 +19,5 @@ class TimeElapsed extends Component {
 const mapStateToProps = state => ({timeEl: state.time.time})
 
 export default connect(mapStateToProps)(TimeElapsed)
+
+

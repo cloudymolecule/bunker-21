@@ -30,3 +30,4 @@ export const Calendar = function calendar(hours, type) {
         return 'error'   
     }
 }
+
