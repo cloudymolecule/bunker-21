@@ -27,6 +27,4 @@ class Weather extends Component {
     }
 }
 
-const mapStateToProps = state => ({ errors: state.weather.errors })
-
-export default connect(mapStateToProps, { addWeather })(Weather)
+export default connect( null, { addWeather })(Weather)

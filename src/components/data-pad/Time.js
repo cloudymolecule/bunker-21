@@ -71,8 +71,4 @@ class Time extends Component {
     }
 }
 
-const mapStateToProps = state => ({ 
-    errors: state.time.errors
-})
-
-export default connect(mapStateToProps, { addTime })(Time)
+export default connect(null, { addTime })(Time)
