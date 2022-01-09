@@ -1,25 +1,27 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { WeatherGen } from '../../helpers/WeatherGen'
-
-function Weather() {
     
+class Weather extends Component {
 
-    function weatherInterval() {
+    state = {
+        pattern: 'Sunny/Clear'
+    }
+    
+    componentDidMount(){
         setInterval(() => {
-            console.log('ertert')
-            WeatherGen()
+            this.setState({
+                pattern: WeatherGen()
+            })
         }, 1000);
     }
 
-    // function weatherInterval = setInterval() => {
-    //     WeatherGen()
-    // }, Math.floor(Math.random() * (1000 + 3000));
-    
-    return (
-        <div>
-           {weatherInterval()}
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                {this.state.pattern}
+            </div>
+        )
+    }
 }
 
 export default Weather

@@ -13,7 +13,7 @@ export const WeatherGen = function weatherGen() {
     ]
 
     function selectPattern() {
-        const i = Math.floor(Math.random() * (35 + 1))
+        const i = Math.floor(Math.random() * 36)
         return wPatterns[i]
     }
 
