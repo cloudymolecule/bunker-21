@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { WeatherGen } from '../../helpers/WeatherGen'
+import { addWeather } from '../../actions/weather'
     
 class Weather extends Component {
 
@@ -12,6 +14,7 @@ class Weather extends Component {
             this.setState({
                 pattern: WeatherGen()
             })
+            this.props.addWeather(this.state.pattern)
         }, Math.floor(Math.random() * 200000) + 50000);
     }
 
@@ -24,4 +27,6 @@ class Weather extends Component {
     }
 }
 
-export default Weather
+const mapStateToProps = state => ({ errors: state.weather.errors })
+
+export default connect(mapStateToProps, { addWeather })(Weather)
