@@ -12,7 +12,7 @@ class Weather extends Component {
             this.setState({
                 pattern: WeatherGen()
             })
-        }, 1000);
+        }, Math.floor(Math.random() * 200000) + 50000);
     }
 
     render() {
