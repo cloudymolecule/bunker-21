@@ -15,7 +15,7 @@ class Weather extends Component {
                 pattern: WeatherGen()
             })
             this.props.addWeather(this.state.pattern)
-        }, Math.floor(Math.random() * 200000) + 50000);
+        }, Math.floor(Math.random() * 200000) + 50000)
     }
 
     render() {

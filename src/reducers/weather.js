@@ -1,10 +1,10 @@
-const weather = (state = { weather: [], errors: []}, action) => {
+const weather = (state = { weather: 'Sunny/Clear', errors: []}, action) => {
     switch (action.type) {
 
         case 'ADD_WEATHER':
             return {
                 ...state,
-                weather: state.weather,
+                weather: action.weather,
                 errors: []
             }
 
