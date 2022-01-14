@@ -18,7 +18,7 @@ class Sleep extends Component {
                 currentSleepLevel: sleepLevels[ind]
             })
             ind ++
-        }, 1000)
+        }, 15000)
 
     }
     

@@ -19,7 +19,7 @@ class Hunger extends Component {
                 currentHungerLevel: hungerLevels[ind]
             })
             ind ++
-        }, 1000)
+        }, 8000)
     }
     
     render() {

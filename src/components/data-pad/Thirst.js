@@ -18,7 +18,7 @@ class Thirst extends Component {
                 currentThirstLevel: thirstLevels[ind]
             })
             ind ++
-        }, 1000)
+        }, 9000)
 
     }
 

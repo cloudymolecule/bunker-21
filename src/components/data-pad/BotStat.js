@@ -3,7 +3,7 @@ import React from 'react'
 function BotStat() {
     return (
         <div>
-            botstat
+            Operational
         </div>
     )
 }
