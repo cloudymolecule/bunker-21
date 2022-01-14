@@ -4,13 +4,28 @@ import { hungerLevels } from '../../constants/hungerLevels'
 class Hunger extends Component {
     
     state = {
-        currentHungerLevel: 'Full'
+        currentHungerLevel: hungerLevels[0]
+    }
+
+    componentDidMount(){
+
+        let ind = 1
+
+        const hungerInterval = setInterval(() => {
+            if (ind === 7) {
+                clearInterval(hungerInterval)
+            }
+            this.setState({
+                currentHungerLevel: hungerLevels[ind]
+            })
+            ind ++
+        }, 1000)
     }
     
     render() {
         return (
             <div>
-                {console.log(hungerLevels)}
+                {console.log(this.state.currentHungerLevel)}
             </div>
         )
     }
