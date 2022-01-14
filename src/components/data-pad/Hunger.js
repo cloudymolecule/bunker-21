@@ -25,7 +25,7 @@ class Hunger extends Component {
     render() {
         return (
             <div>
-                {console.log(this.state.currentHungerLevel)}
+                {this.state.currentHungerLevel}
             </div>
         )
     }

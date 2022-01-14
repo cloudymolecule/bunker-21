@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Thirst() {
-    return (
-        <div>
-            thirst
-        </div>
-    )
+class Thirst extends Component {
+    
+    state = {
+        currentThirst: 
+    }
+
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default Thirst
