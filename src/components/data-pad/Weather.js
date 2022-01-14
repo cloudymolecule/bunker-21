@@ -28,3 +28,5 @@ class Weather extends Component {
 }
 
 export default connect( null, { addWeather })(Weather)
+
+
