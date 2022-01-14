@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { hungerLevels } from '../../constants/hungerLevels'
 
-function Hunger() {
-    return (
-        <div>
-            hunger
-        </div>
-    )
+class Hunger extends Component {
+    
+    state = {
+        currentHungerLevel: 'Full'
+    }
+    
+    render() {
+        return (
+            <div>
+                {console.log(hungerLevels)}
+            </div>
+        )
+    }
 }
 
 export default Hunger
