@@ -1,9 +1,9 @@
 export const thirstLevels = [
-    'Fully Hydrated',
-    'Mostly Hydrated',
-    'A little Thirsty',
+    'Fully hydrated',
+    'Mostly hydrated',
+    'A little thirsty',
     'Thirsty',
-    'Really Thirsty',
+    'Really thirsty',
     'Dry',
     'Parched',
     'Dehydrated',
