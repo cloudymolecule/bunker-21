@@ -17,7 +17,7 @@ function DataPad() {
             
             {Flicker('data-pad-container')}
             
-            <div>DATE: <Date /></div>
+            <div>YEAR: <Date /></div>
             <div>TIME: <Time /></div>
             <div>WEATHER: <Weather /></div>
             <div>TIME ELAPSED: <TimeElapsed /></div>

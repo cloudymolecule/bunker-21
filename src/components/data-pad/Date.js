@@ -5,7 +5,6 @@ import { CalcDate } from '../../helpers/CalcDate'
 class Date extends Component {
 
     render() {
-
         return (
             <div>
                 {CalcDate(this.props.timeEl)}
