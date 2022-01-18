@@ -5,12 +5,18 @@ import  { Calendar } from '../../helpers/Calendar'
 
 class TimeElapsed extends Component {
     
+    state = {
+        years : Calendar(this.props.timeEl, 'y'),
+        months : Calendar(this.props.timeEl, 'm'),
+        days: Calendar(this.props.timeEl, 'd')
+    }
+
     render() {
         return (
             <div>
-                {Calendar(this.props.timeEl, 'y')} YEARS <br />
-                {Calendar(this.props.timeEl, 'm')} MONTHS  <br />
-                {Calendar(this.props.timeEl, 'd')} DAYS 
+                 {this.state.years} YEARS <br />
+                 {this.state.months} MONTHS  <br />
+                 {this.state.days} DAYS 
             </div>
         )
     }

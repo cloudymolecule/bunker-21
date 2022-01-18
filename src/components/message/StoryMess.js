@@ -4,7 +4,7 @@ import { storyMessages } from '../../constants/storyMessages'
 class StoryMess extends Component {
     
     state = {
-        currentStoryMessage: storyMessages[0]
+        currentStoryMessage: storyMessages.story[0]
     }
 
     render() {

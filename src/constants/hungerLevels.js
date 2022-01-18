@@ -8,3 +8,4 @@ export const hungerLevels = [
     'Starving',
     'Starved'
 ]
+

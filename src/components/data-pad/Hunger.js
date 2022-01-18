@@ -32,3 +32,4 @@ class Hunger extends Component {
 }
 
 export default Hunger
+
