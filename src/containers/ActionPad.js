@@ -9,20 +9,41 @@ import { Flicker } from '../helpers/Flicker'
 class ActionPad extends Component {
     
     state = {
-        compDisplayed: 0
+        compDisplayed: 0,
+        buttonText: 'TERMINAL'
     }
 
     render() {
 
         let switchComponents = () => {
-            if (this.state.compDisplayed === 3) {
-                this.setState({
-                    compDisplayed: 0
-                })
-            } else {
-                this.setState({
-                    compDisplayed: this.state.compDisplayed + 1
-                })
+            switch(this.state.compDisplayed) {
+                case 0:
+                    this.setState({
+                        compDisplayed: 1,
+                        buttonText: 'INVENTORY'
+                    })
+                    break
+                case 1:
+                    this.setState({
+                        compDisplayed: 2,
+                        buttonText: 'LOAD/SAVE'
+                    })
+                    break
+                case 2:
+                    this.setState({
+                        compDisplayed: 3,
+                        buttonText: 'ROBOTS'
+                    })
+                    break
+                case 3:
+                    this.setState({
+                        compDisplayed: 0,
+                        buttonText: 'TERMINAL'
+                    })
+                    break
+                default:
+                    console.log('This is a big error, please contact Bunker-21 services')
+                    break
             }
         }
 
@@ -30,25 +51,22 @@ class ActionPad extends Component {
             switch(this.state.compDisplayed) {
                 case 0:
                     return <Terminal />
-                    break
                 case 1:
                     return <Inventory />
-                    break
                 case 2:
                     return <LoadSaveEtc />
-                    break
                 case 3:
                     return <Robots />
-                    break
                 default:
                     console.log('This is a big error, please contact Bunker-21 services')
+                    break
             }
         }
 
         return (
             <div className='action-pad-container' id='action-pad-container'>
                 {Flicker('action-pad-container')}
-                <button id='action-pad-button' onClick={switchComponents}>switch</button>
+                <button id='action-pad-button' onClick={switchComponents}>{this.state.buttonText}</button>
                 {actuallySwitchComponents()}
             </div>
         )
